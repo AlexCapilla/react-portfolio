@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import "./style.css"
 
 function Nav(props) {
     const {
@@ -8,12 +10,14 @@ function Nav(props) {
     } = props;
 
 
+    useEffect(() => {
+        document.title = currentPage.name
+    }, [currentPage])
 
 
-
-    return <nav><ul>
+    return <nav><ul className="nav-container">
         {pages.map((page) => {
-            return <li>{page.name}</li>
+            return <li className={currentPage.name === page.name && "active"} key={page.name} ><span onClick={() => setCurrentPage(page)}>{page.name}</span></li>
         })}
         </ul></nav>
 }
