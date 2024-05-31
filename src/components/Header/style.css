@@ -30,6 +30,6 @@ h1 {
 }
 
 .header-text {
-    background-color: #45718A;
-    color: white;
+    background-color: white; /* placeholder for now */
+    color: #45718a;
 }
