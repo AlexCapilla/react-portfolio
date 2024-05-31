@@ -1,5 +1,5 @@
 .active {
-    color: blue;
+    color: teal;
 }
 
 .nav-container {
@@ -8,4 +8,5 @@
     grid-gap: 10px;
     text-decoration: none;
     list-style-type: none;
+    cursor: pointer;
 }
