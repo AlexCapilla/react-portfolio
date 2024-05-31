@@ -4,11 +4,11 @@ function Footer() {
   const icons = [
     {
       name: "fa-brands fa-github",
-      links: "https://github.com/",
+      links: "https://github.com/AlexCapilla",
     },
     {
       name: "fa-brands fa-linkedin",
-      links: "https://linkedin.com/",
+      links: "https://www.linkedin.com/in/alejandro-capilla-58681b19b/",
     },
   ];
 
