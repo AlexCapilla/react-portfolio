@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Page from "./components/Page";
 
 // Components
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
     </Header>
     <main>
-      Hello
+      <Page currentPage={currentPage}></Page>
     </main>
     <Footer/>
   </div>
