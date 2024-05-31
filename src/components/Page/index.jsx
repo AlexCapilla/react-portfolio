@@ -4,6 +4,7 @@ import About from "../../Pages/about";
 import Portfolio from "../../Pages/portfolio";
 import Contact from "../../Pages/contact";
 import Resume from "../../Pages/resume";
+import PageContent from "../PageContent";
 
 
 function Page({ currentPage }) {
@@ -24,7 +25,7 @@ function Page({ currentPage }) {
     }
 
     return <section>
-        {renderPage()}
+        <PageContent>{renderPage()}</PageContent>
     </section>
 }
 
