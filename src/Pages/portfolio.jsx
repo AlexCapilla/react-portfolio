@@ -1,12 +1,53 @@
 import React from "react";
-
+import './portfolio.css';
 
 function PortfolioPage() {
-    return <section>
-    <h1>Portfolio</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-</section>
+  const projects = [
+    {
+      title: "PlayPoint",
+      description:
+        "Gaming community platform for discovering, reviewing, and discussing video games.",
+      imageUrl: "./images/PlayPointMain.JPG",
+      link: "https://playpoint.onrender.com/",
+    },
+    {
+      title: "SoccerSphere HQ",
+      description:
+        "Soccer information app using API-Football and Geocode APIs to provide current club and venue details for top European leagues.",
+      imageUrl: "./images/soccersphere.JPG",
+      link: "https://moe1362.github.io/soccer-info/",
+    },
+    {
+      title: "Weather Dashboard",
+      description:
+        "Weather app that provides current and future weather forecasts in cities.",
+      imageUrl: "./images/weatherMain.JPG",
+      link: "https://alexcapilla.github.io/weather-dashboard/",
+    },
+  ];
+
+  return (
+    <section className="portfolio-section">
+      <h1>Portfolio</h1>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <div className="project-info">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
+              <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="project-image"
+              />
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default PortfolioPage;

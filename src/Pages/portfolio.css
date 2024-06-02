@@ -1,0 +1,55 @@
+.portfolio-section {
+    padding: 2rem;
+    background-color: #f7eddc;
+    
+}
+
+.portfolio-section h1 {
+    margin-top: 0.5rem; /* Reduced top margin */
+    /* font-size: 2rem; */
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1rem;
+    background-color: #ed664c;
+}
+
+.project-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-info p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: white;
+}
