@@ -1,4 +1,5 @@
 import React from "react";
+import linkedIn from "../assets/images/LinkedInPic.jpg"
 import "./about.css";
 
 function AboutPage() {
@@ -6,7 +7,7 @@ function AboutPage() {
     <section className="about-section">
       <h1>About</h1>
       <img
-        src="./images/LinkedInPic.jpg"
+        src={linkedIn}
         alt="picture of me holding thumbs up and smiling"
         className="about-image"
       />

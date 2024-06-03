@@ -1,5 +1,5 @@
 import React from "react";
-
+import venturaSunset from "../../assets/images/venturaSunset.jpeg"
 import "./style.css";
 
 function Header(props) {
@@ -8,8 +8,8 @@ function Header(props) {
       <h1 className="header-text">Alejandro Capilla</h1>
       <div className="image-container">
         <img
-          src="./images/venturaSunset.jpeg"
-          alt="Header Image of a lake"
+          src= {venturaSunset}
+          alt="Header Image of a beach town"
         />
       </div>
       {props.children}

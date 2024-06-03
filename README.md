@@ -76,7 +76,7 @@ This is a single-page application (SPA) portfolio website for showcasing a web d
 
 2. Navigate to the project directory:
    ```bash
-   cd portfolio-website
+   cd react-portfolio1
 
 3. Install dependencies:
    ```bash

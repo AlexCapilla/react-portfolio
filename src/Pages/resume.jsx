@@ -1,4 +1,5 @@
 import React from "react";
+import resumePDF from "../assets/images/WebDev Resume.pdf"
 import './resume.css';
 
 function ResumePage() {
@@ -20,7 +21,7 @@ function ResumePage() {
         <section className="resume-section">
             <h1>Resume</h1>
             <div className="resume-content">
-                <a href="./images/WebDev Resume.pdf" download className="resume-link">Download Resume</a>
+                <a href={resumePDF} download className="resume-link">Download Resume</a>
                 <h2>Proficiencies</h2>
                 <ul className="proficiency-list">
                     {proficiencies.map((proficiency, index) => (
